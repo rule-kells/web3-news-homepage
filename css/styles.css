@@ -232,7 +232,7 @@ main {
 
 .active.header__nav .nav__list--mobile {
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: var(--clr-neutral-palette-50);
     inset: auto 0 0 auto;
     padding: 9rem 1.8125rem 19.3125rem 1.5rem;
