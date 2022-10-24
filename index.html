@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <script defer src="./main.js"></script>
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+
+  <header class="header container">
+    <img class="logo" src="./assets/images/logo.svg" alt="the letter W">
+    <nav class="header__nav">
+      <div class="overlay"></div>
+      <div class="nav__toggle">
+        <button class="nav__btn--open"><img src="./assets/images/icon-menu.svg" alt="open nav"></button>
+        <button class="nav__btn--close"><img  src="./assets/images/icon-menu-close.svg" alt="close nav"></button>
+      </div>
+      <ul class="nav__list nav__list--mobile">
+        <li class="nav__item"><a class="nav__link fs-nav" href="#">Home</a></li>
+        <li class="nav__item"><a class="nav__link fs-nav" href="#">New</a></li>
+        <li class="nav__item"><a class="nav__link fs-nav" href="#">Popular</a></li>
+        <li class="nav__item"><a class="nav__link fs-nav" href="#">Trending</a></li>
+        <li class="nav__item"><a class="nav__link fs-nav" href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="d-grid container">
+
+
+    <picture class="hero-img">
+      <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+    </picture>
+
+    <h1 class="fs-heading-xl fs-heading-dark">The Bright Future of Web 3.0?</h1>
+    <div class="content">
+      <p>
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
+        the
+        people.
+        But is it really fulfilling its promise?
+      </p>
+      <a href="#" class="fs-btn">Read more</a>
+    </div>
+
+    <article class="new">
+      <h2 class="fs-heading-l fs-heading-accent">New</h2>
+      <section class="new__section">
+        <h3 class="fs-heading-s fs-heading-light">Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </section>
+      <section class="new__section">
+        <h3 class="fs-heading-s fs-heading-light">The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </section>
+      <section class="new__section">
+        <h3 class="fs-heading-s fs-heading-light">Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </section>
+    </article>
+
+    <article class="articles">
+      <section class="article article-1">
+        <img class="article__img" src="./assets/images/image-retro-pcs.jpg" alt="">
+        <h3 class="article__num fs-heading-m fs-heading-neutral">01</h3>
+        <h4 class="article__title fs-heading-xs fs-heading-dark">Reviving Retro PCs</h4>
+        <p class="article__body">What happens when old PCs are given modern upgrades?</p>
+      </section>
+      <section class="article article-2">
+        <img class="article__img" src="./assets/images/image-top-laptops.jpg" alt="">
+        <h3 class="article__num fs-heading-m fs-heading-neutral">02</h3>
+        <h4 class="article__title fs-heading-xs fs-heading-dark">Top 10 Laptops of 2022</h4>
+        <p class="article__body">Our best picks for various needs and budgets.</p>
+      </section>
+      <section class="article article-3">
+        <img class="article__img" src="./assets/images/image-gaming-growth.jpg" alt="">
+        <h3 class="article__num fs-heading-m fs-heading-neutral">03</h3>
+        <h4 class="article__title fs-heading-xs fs-heading-dark">The Growth of Gaming</h4>
+        <p class="article__body">How the pandemic has sparked fresh opportunities.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kellen Ruyle</a>.
+  </footer>
+</body>
+
+</html>
