@@ -308,7 +308,7 @@ main {
     padding: 2.125rem 0 1.8125rem;
 }
 
-.articles {
+.articles--wrapper {
     margin-top: 4rem;
 }
 
@@ -407,7 +407,7 @@ main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min-content, 21.875rem));
         grid-template-rows: minmax(min-content, 18.75rem) minmax(min-content, 11.4375rem) minmax(min-content, 8.0625rem);
-        grid-template-areas: 'img img new' 'heading content new' 'articles articles articles';
+        grid-template-areas: 'img img new' 'heading content new' 'articles--wrapper articles--wrapper articles--wrapper';
         gap: 1.75rem 1.875rem;
     }
 
@@ -462,16 +462,16 @@ main {
     }
 
 
-    /* articles  */
+    /* articles--wrapper  */
 
-    .articles {
+    .articles--wrapper {
         display: grid;
         grid-template-columns: repeat(3, minmax(min-content, 21.875rem));
         grid-template-rows: minmax(min-content, 8.0625rem);
         gap: 0 1.875rem;
         padding: 0;
         margin-top: 4.4375rem;
-        grid-area: articles;
+        grid-area: articles--wrapper;
     }
 
     .article {
